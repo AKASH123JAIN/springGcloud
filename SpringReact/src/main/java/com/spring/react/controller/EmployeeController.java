@@ -19,6 +19,11 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeService empService;
 	
+	@GetMapping("/test")
+	public String getMessage() {
+		return "Hi , from Akash App";
+	}
+	
 	@GetMapping("/employees")
     public List<Employee> getAllEmployees() {
 		
